@@ -16,7 +16,7 @@ export default async function List(){
                     <span >{result[i].title} </span>
                     <Link href={`/detail/${result[i]._id}`} >
                     <button className="border border-black p-1 ">상세보기</button>
-                    </Link>
+                    </Link> 
                     </p> 
                     </div>
                     </div>
