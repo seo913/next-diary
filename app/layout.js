@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Link from 'next/link';
+import Login from './login';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='flex justify-around items-center bg-slate-400 h-20 text-lg font-semibold  '>
+        <Link href='/diaryform'>일기쓰기</Link>
+        {/* <Login/> */}
+        <Link href='/'>목록</Link>
+        </div>
+        {children}</body>
     </html>
   )
 }
